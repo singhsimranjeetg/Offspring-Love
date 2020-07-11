@@ -31,12 +31,11 @@ return(
         <div key = {node.id}>
           <BlogTitle>
           <BlogLink to = {node.fields.slug}>
-            { console.log(node.fields)}
           <h2> {node.frontmatter.title} </h2>
           </BlogLink>
           </BlogTitle>
           
-          <h3> {node.frontmatter.date} </h3>
+          <h5> {node.frontmatter.date} </h5>
           <p> {node.excerpt} </p>
         </div>
       ))
